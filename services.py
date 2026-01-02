@@ -6,7 +6,7 @@ class AIService:
 
     def generate_reply(self,prompt):
         response = self.Client.models.generate_content(
-            model = "gemini -2.5-flash", contents=prompt
+            model = "gemini-2.5-flash", contents=prompt
         )
         return response.text 
 
